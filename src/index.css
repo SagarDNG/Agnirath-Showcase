@@ -1,0 +1,420 @@
+.App {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: white;
+    scroll-behavior: smooth;
+    overflow-x: clip;
+    font-family: sans-serif;
+}
+
+.navbar {
+    background-color: #000000;
+    top: 0;
+}
+
+.navbar div a {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.navbar a {
+    border-bottom: 2px solid transparent;
+    margin: 0 10px;
+}
+
+#navbarNav a:hover {
+    border-bottom: 2px solid #F28705;
+}
+
+.navbar-brand img {
+    width: 9rem;
+    height: 3rem;
+}
+
+.competitions,
+.sponsors {
+    width: 16rem;
+    height: 14rem;
+    font-size: 1.2rem;
+    transition: 500ms;
+    margin: .5rem;
+    border-radius: 1rem;
+    /* border: 2px solid rgb(21, 178, 217, 0.1); */
+    box-shadow: rgba(7, 129, 165, 0.7) 0px 5px 10px, rgba(18, 147, 186, 0.78) 0px 3px 5px;
+    background-image: url('https://pbs.twimg.com/media/E8kwyrDUcAMw65l.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.sponsors {
+    width: 22rem;
+}
+
+.competitions:nth-of-type(2) {
+    background-image: url('https://i0.wp.com/gadget.co.za/wp-content/uploads/2022/09/SSC-0905-11h37-33.jpg');
+}
+
+.competitions:nth-of-type(3) {
+    background-image: url('https://www.americansolarchallenge.org/ASC/wp-content/uploads/2013/01/IMG_0414_7556365736_l.jpg');
+}
+
+.competitions:nth-of-type(4) {
+    background-image: url('https://pbs.twimg.com/media/EvteWfZXYAAd3Bl?format=jpg');
+}
+
+.sponsors {
+    background-image: url('https://assets.telegraphindia.com/telegraph/2021/Nov/1636915820_15bussolar_3c.jpg');
+}
+
+.competitions:hover,
+.sponsors:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 500ms;
+}
+
+.competitions>a {
+    background: #f07510;
+    color: #ffffff;
+    border-radius: 1rem;
+    padding: .1rem .5rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.sponsors>a {
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.competitions>a:hover,
+.sponsors>a:hover {
+    color: #f07510;
+    background: #fff;
+    transition: 500ms;
+}
+
+.sponsors>a:hover {
+    color: #04ff00;
+    background: none;
+}
+
+.FooterLogos .IITM,
+.FooterLogos .CFI,
+.FooterLogos .Agnirath {
+    width: 4em;
+    height: 4em;
+}
+
+.FooterLogos .CFI {
+    width: 5.5em;
+}
+
+.FooterLogos .Agnirath {
+    width: 10em;
+}
+
+.Linkedin,
+.Twitter,
+.Instagram,
+.Mail,
+.Flickr {
+    width: 2em;
+    height: 2em;
+    transition: 1s;
+}
+
+.Linkedin:hover,
+.Twitter:hover,
+.Instagram:hover,
+.Mail:hover,
+.Flickr:hover {
+    padding: .2em;
+    color: #f07510;
+    transition: 1s;
+}
+
+/********************************************************* Logo CSS **************************************************/
+@media screen and (min-width: 444px) {
+
+    .aboutLogo {
+        margin-left: 1rem;
+        height: 120px;
+        width: 300px;
+    }
+
+    .visionLogo {
+        margin-left: 1rem;
+        height: 100px;
+        width: 300px;
+    }
+
+    .competitionsLogo {
+        margin-left: 3rem;
+        height: 120px;
+        width: 300px;
+    }
+
+    .sponsorsLogo {
+        margin-left: 3rem;
+        height: 100px;
+        width: 300px;
+    }
+
+    .contactLogo {
+        margin-left: 3rem;
+        height: 120px;
+        width: 300px;
+    }
+}
+
+/* moving the arrow icons to right and left */
+.homeArrowMarkRight {
+    margin-left: 10em;
+}
+
+.homeArrowMarkLeft {
+    margin-right: 10em;
+}
+
+#contact p,
+#contact a {
+    font-size: large;
+    text-decoration: none;
+    color: #f07510;
+    transition: .5s;
+}
+
+#contact a:hover {
+    color: #04ff00;
+    transition: .5s;
+}
+
+.navbar-toggler-icon {
+    background-color: #f07510;
+    border-radius: 5px;
+    width: 2em;
+    height: 2em;
+}
+
+.mobile-css {
+    display: none;
+}
+
+.teamLogo {
+    display: none;
+}
+
+.primary {
+    display: flex;
+}
+
+#home img {
+    height: 100vh;
+}
+
+.person {
+    width: 200px;
+    height: 200px;
+    margin: 1rem 2rem;
+    background-image: url(./images/person.png);
+    background-size: cover;
+    background-position: center;
+    padding: 115px 0 0;
+    border-radius: 10%;
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+}
+
+.person:has(.subModule) {
+    padding: 105px 0 0;
+}
+
+.person .content {
+    padding: 1rem;
+    background: linear-gradient(hsl(0 0% 0% / 0),
+            hsl(30 0% 0% / 0) 10%,
+            hsl(0 0% 0% / 1));
+    text-align: center;
+    color: #ffffff;
+    transform: translateY(40%);
+    transition: transform .5s ease;
+}
+
+.person:hover .content {
+    transform: translateY(-10%);
+}
+
+.person:has(.subModule):hover .content {
+    transform: translateY(-15%);
+}
+
+.person .contact a {
+    margin: 0 25px;
+}
+
+/* Background images for the team section */
+.spons .person:nth-of-type(5) {
+    background-image: url(./images/Sagar.jpeg);
+}
+
+.teamSection {
+    margin: 0 10rem;
+}
+
+.about,
+.vision>p {
+    font-size: larger;
+}
+
+.about .highlight {
+    color: #f07510;
+}
+
+.vision>p {
+    color: #E0FC00;
+}
+
+#about,
+#vision {
+    padding: 0 2rem;
+}
+
+/* Mobile Design */
+@media screen and (max-width: 444px) {
+    .mobile-css {
+        display: block;
+    }
+
+    #home {
+        display: none;
+    }
+
+    #about,
+    #vision,
+    #team,
+    #competitions,
+    #sponsors,
+    #contact,
+    .FooterLogos {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3em;
+    }
+
+    .teamLogo {
+        display: block;
+    }
+
+    .primary {
+        display: none;
+    }
+
+    .aboutLogo,
+    .visionLogo {
+        margin-left: -4rem;
+    }
+
+    .teamLogo,
+    .competitionsLogo,
+    .sponsorsLogo,
+    .contactLogo {
+        margin-left: -3.5rem;
+    }
+
+
+    .aboutLogo,
+    .visionLogo,
+    .teamLogo,
+    .competitionsLogo,
+    .sponsorsLogo,
+    .contactLogo {
+        width: 12rem;
+    }
+
+    .about,
+    .vision>p {
+        padding: 2em 0;
+        line-height: 1.5em;
+        font-size: 1rem;
+    }
+
+    #contact p,
+    #contact a {
+        font-size: small;
+    }
+
+    .person {
+        width: 150px;
+        height: 150px;
+        margin: .5rem;
+        padding: 70px 0 0;
+    }
+
+    .person:has(.subModule) {
+        padding: 60px 0 0;
+    }
+
+    .person-cards>div:nth-of-type(1),
+    .person-cards>div:nth-of-type(5) {
+        margin: .5rem;
+    }
+
+    .person .content {
+        padding: .5rem .1rem;
+        background: linear-gradient(hsl(0 0% 0% / 0),
+                hsl(30 0% 0% / 0) 10%,
+                hsl(0 0% 0% / 1));
+        text-align: center;
+        color: #ffffff;
+        transform: translateY(50%);
+        transition: transform .5s ease;
+    }
+
+    .person:hover .content {
+        transform: translateY(0);
+    }
+
+    .person .contact a {
+        margin: 0 20px;
+    }
+
+    .teamSection {
+        margin: 0;
+    }
+
+    .footer-text {
+        font-size: small;
+    }
+
+    .competitions,
+    .sponsors {
+        width: 8rem;
+        height: 7rem;
+        margin: 1rem;
+        font-size: 1rem;
+    }
+
+    .sponsors {
+        width: 12rem;
+        height: 9rem;
+    }
+
+    .competitions>a,
+    .sponsors>a {
+        font-weight: bolder;
+        font-size: 10px;
+        padding: .1rem .2rem;
+    }
+
+    .carousel-control-prev span,
+    .carousel-control-next span {
+        display: none;
+    }
+}
